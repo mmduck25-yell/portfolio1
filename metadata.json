@@ -1,0 +1,6 @@
+{
+  "name": "홍예랑 Hong Yerang | 웹툰 PD 포트폴리오",
+  "description": "기획력, 세로 스크롤 연출 이해도, 상업 작품 분석력을 직관적으로 보여주는 웹툰 PD 홍예랑의 전문 포트폴리오",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

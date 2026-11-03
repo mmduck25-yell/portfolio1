@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  }
+  
+  html, body, button, input, textarea, select {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', sans-serif;
+    color-scheme: light;
+    letter-spacing: -0.015em;
+  }
+
+  /* Custom subtle scrollbar for webtoon vertical preview simulation */
+  .webtoon-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .webtoon-scroll::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  .webtoon-scroll::-webkit-scrollbar-thumb {
+    background: #0284c7;
+    border-radius: 9999px;
+  }
+  .webtoon-scroll::-webkit-scrollbar-thumb:hover {
+    background: #0369a1;
+  }
+
+  /* Clean horizontal scrollbar hiding for mobile menu tab bar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
